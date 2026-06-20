@@ -4,10 +4,11 @@ Likho is a small full-stack notes app I built to understand how authentication, 
 
 ## Links
 
-- Live backend API: https://notes-app-production-86e1.up.railway.app
+- Live demo: https://gilded-babka-4f914b.netlify.app
+- Backend API: https://notes-app-production-86e1.up.railway.app
 - Source code: https://github.com/Ridhi-03Kumari/notes-app
 
-The frontend (`frontend/notes-app.html`) talks to the live backend above, so you can open it in any browser and start using the app.
+You can try it straight from the live demo above — create an account, or log in and start writing.
 
 ## What it does
 
@@ -22,7 +23,7 @@ The frontend (`frontend/notes-app.html`) talks to the live backend above, so you
 
 The backend is a Node.js and Express REST API. It stores data in MongoDB Atlas through Mongoose and handles authentication with JSON Web Tokens and bcrypt. The frontend is a single HTML file with plain JavaScript that talks to the API using fetch — no framework, just the essentials.
 
-In production, the backend runs on Railway and the database lives on MongoDB Atlas.
+In production, the frontend is hosted on Netlify, the backend runs on Railway, and the database lives on MongoDB Atlas.
 
 ## Project structure
 
@@ -35,7 +36,7 @@ notes-app/
 │   ├── index.js             # server entry point
 │   └── package.json
 └── frontend/
-    └── notes-app.html       # the entire frontend, in one file
+    └── index.html           # the entire frontend, in one file
 ```
 
 ## API reference
@@ -74,7 +75,7 @@ Then start the server:
 npm start
 ```
 
-For the frontend, open `frontend/notes-app.html` in your browser, or serve it with something like VS Code's Live Server. If you're running your own backend, point the `API` constant near the top of the file at your backend's address.
+For the frontend, open `frontend/index.html` in your browser, or serve it with something like VS Code's Live Server. If you're running your own backend, point the `API` constant near the top of the file at your backend's address.
 
 ## About
 
